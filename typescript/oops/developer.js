@@ -15,6 +15,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
+exports.Developer = void 0;
 var employee_1 = require("./employee");
 var Developer = /** @class */ (function (_super) {
     __extends(Developer, _super);
@@ -29,8 +30,12 @@ var Developer = /** @class */ (function (_super) {
     Developer.prototype.writeCode = function () {
         console.log("Writing code");
     };
+    Developer.prototype.invite = function () {
+        console.log("Invited");
+    };
     return Developer;
 }(employee_1.Employee));
+exports.Developer = Developer;
 var dev = new Developer("Dev1", "Bank", 2, "ICICI");
 dev.print();
 dev.writeCode();
